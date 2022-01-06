@@ -2,21 +2,22 @@
 <html>
 <head>
     <title>
-        Html CRUD with pure JavaScript
+         CRUD JavaScript
     </title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <table>
         <tr>
             <td>
-                <form>
+                <form onsubmit="event.preventDefault();" autocomplete="off">
                     <div>
-                        <label>Full name</label>
-                        <input type="text" name="Full name" id="fullName">
+                        <label>Full Name</label>
+                        <input type="text" name="fullName" id="fullName">
                     </div>
                     <div>
-                        <label>EMP codde</label>
+                        <label>EMP Code</label>
                         <input type="text" name="empCode" id="empCode">
                     </div>
                     <div>
@@ -27,7 +28,7 @@
                         <label>City</label>
                         <input type="text" name="city" id="city">
                     </div>
-                    <div>
+                    <div class="form-action-buttons">
                         <input type="submit" value="Submit">
                     </div>
                 </form>
